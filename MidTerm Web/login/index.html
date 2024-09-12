@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/login/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="/Homepage.html">
+                <img src="/img/logo.png" class="Logo">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Location</a></li>
+                <a href="#">|<i2 class="fa-solid fa-magnifying-glass" style="color: white"></i2></a>
+                <a href="#">|<i3 class="fa-brands fa-facebook" style="color: white"></i3></a>
+                <a href="#">|<i4 class="fa-solid fa-phone" style="color: white"></i4></a>
+                <a href="#">|<i5 class="fa-brands fa-telegram"style="color: white"></i5></a>
+            </ul>
+        </div>
+    <div class="content" id="content-popup">     
+    <form action="">
+        <a href="#"><i class="fa-solid fa-circle-xmark" style="position: absolute;
+         margin-left: 309px;
+         color: black;
+         font-size: 20px;"></i>
+         </a>
+        <h1>Login</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <i class="fa-solid fa-user"></i>
+        
+        <label for="Password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <i id="toggle" class="fa-solid fa-eye"></i>
+        <input type="submit" value="Login">
+        <div class="bottom-form">
+          <div class="no-account">Don't have an account?</div>
+          <a href="/signup/signup.html" class="SignUp">SignUp</a>
+        </div>
+    </form>
+</div>
+    
+</body>
+        <script src="/main.js"></script>
+</html>  

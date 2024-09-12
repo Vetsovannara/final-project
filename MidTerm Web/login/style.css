@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Font/Roboto-Regular.ttf');
+}
+
+body{
+  font-family: 'Roboto';
+  }
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+h1{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 40px;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(/img/com\ bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Logo{
+  width: 350px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #a64b4b;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+form{
+  padding: 55px;
+  border: 1px solid green;  
+  border-radius: 20px;
+  border: 5px solid #000000;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: left;  
+  background: whitesmoke;
+}
+label,input{
+  display: block;
+  margin: 10px 0px;
+  font-size: 25px;
+  border-radius: 5px;
+  }
+label{ 
+      color: rgb(0, 0, 0);
+      font-size: 23px;
+  }
+input{
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 1px solid gray;
+}
+input:focus{
+  border-color: red;
+  outline: 0;
+}
+input[type="Submit"]{
+  padding: 12px 100px;
+  border-radius: 0px;
+  margin-left: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  align-items: center;
+}
+input[type="Submit"]:hover{
+  background-color: rgb(135, 0, 0);
+  border-radius: 0px;
+  transition: 0.5s;
+}
+.alert-popup{
+  position: absolute;
+  margin-right: 300px;
+  padding-top: 300px;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%,-50%);
+}
+#btn-signup{
+  padding: 9px 15px;
+  border: none;
+  background-color: green;
+  font-size: 18px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 75%;
+  margin-top: 5%;
+  
+  
+}
+#btn-signup:hover{
+  background-color: rgb(42, 165, 71);
+}
+.bottom-form{
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  margin-left: 32px;
+  color: rgb(0, 0, 0);
+}
+.SignUp{
+  padding-left: 10px;
+  cursor: pointer;
+  color: #000000;
+  align-items: center;
+  transition: transform 0.3s;
+}
+.SignUp:hover{
+  transform: scale(1.3);
+}
+i{
+  position: absolute;
+  margin-top: -39px;
+  margin-left: 252px;
+  color: gray;
+  cursor: pointer;
+}
